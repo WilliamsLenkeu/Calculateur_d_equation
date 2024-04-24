@@ -1,0 +1,54 @@
+*{
+    font-family: cursive;
+}
+
+body{
+    background-color: rgb(235, 235, 235);
+    margin: 50px 100px 0 100px;
+}
+
+.calculatrice{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 0px 0 20px;
+    margin: 10px;
+    height: auto;
+    border: 2px groove lightgray;
+}
+
+.animation{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    height: 200px;
+    border: 2px groove lightgray;
+}
+
+.my-text{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.my-form{
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+.input-block-text{
+    width: 40px;
+    font-size: 32px;
+    border-radius: 7px;
+    border: 0.1px solid lightgray;
+    text-align: center;
+}
+
+.my-button{
+    border-radius: 7px;
+    border: 2px solid lightgray;
+    font-size: 18px;
+}
+
+.my-button:hover{
+    border: 2px solid skyblue;
+}
