@@ -1,14 +1,14 @@
-*{
+* {
     font-family: cursive;
 }
 
-body{
-    background-color: rgb(235, 235, 235);
+body {
+    background-color: white;
     margin: 50px 100px 0 100px;
 }
 
-.calculatrice{
-    background-color: white;
+.calculatrice {
+    background-color: rgb(235, 235, 235);
     border-radius: 10px;
     padding: 20px 0px 0 20px;
     margin: 10px;
@@ -16,7 +16,7 @@ body{
     border: 2px groove lightgray;
 }
 
-.animation{
+.animation {
     background-color: white;
     border-radius: 10px;
     padding: 20px;
@@ -25,17 +25,17 @@ body{
     border: 2px groove lightgray;
 }
 
-.my-text{
+.my-text {
     font-size: larger;
     font-weight: bold;
 }
 
-.my-form{
+.my-form {
     margin-top: 20px;
     font-size: 32px;
 }
 
-.input-block-text{
+.input-block-text {
     width: 40px;
     font-size: 32px;
     border-radius: 7px;
@@ -43,12 +43,12 @@ body{
     text-align: center;
 }
 
-.my-button{
+.my-button {
     border-radius: 7px;
     border: 2px solid lightgray;
     font-size: 18px;
 }
 
-.my-button:hover{
+.my-button:hover {
     border: 2px solid skyblue;
 }
