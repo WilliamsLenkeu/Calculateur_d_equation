@@ -7,24 +7,40 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="calculatrice">
-        <span class="my-text">Entrez les coefficients de l'équation du second degré : ax² + bx + c = 0</span>
-        <form action="" class="my-form">
-            <p>
-                <input type="number" placeholder="a" id="a" class="input-block-text" />
-                X<sup>2</sup> +
-                <input type="number" placeholder="b" id="b" class="input-block-text" />
-                X +
-                <input type="number" placeholder="c" id="c" class="input-block-text" />
-                =
-                <input type="number" placeholder="0" id="d" class="input-block-text" disabled />
-            </p>
-            <p>
-                <input type="button" value="Résoudre" class="my-button">
-            </p>
-        </form>
+    <div class="container">
+        <div class="calculatrice">
+            <h1 class="my-text">Résolveur d'équations du second degré</h1>
+            <span class="my-subtext">Entrez les coefficients de l'équation du second degré : ax² + bx + c = 0</span>
+            <form action="" class="my-form">
+                <div class="input-group">
+                    <input type="number" placeholder="a" id="a" class="input-block-text" />
+                    X² +
+                    <input type="number" placeholder="b" id="b" class="input-block-text" />
+                    X +
+                    <input type="number" placeholder="c" id="c" class="input-block-text" />
+                    =
+                    <input type="number" placeholder="0" id="d" class="input-block-text"/>
+                </div>
+                <button type="submit" class="my-button">Résoudre</button>
+            </form>
+        </div>
+        <div class="animation" style="background-color: rgb(255, 255, 255);">
+            <div class="rain" hidden>
+                <img src="./img/gif/rain.gif" class="icon-anim-rain" alt="">
+                <img src="./img/gif/rain.gif" class="icon-anim-rain" alt="">
+                <img src="./img/gif/rain.gif" class="icon-anim-rain" alt="">
+                <img src="./img/gif/rain.gif" class="icon-anim-rain" alt="">
+                <img src="./img/gif/rain.gif" class="icon-anim-rain" alt="">
+                <img src="./img/gif/rain.gif" class="icon-anim-rain" alt="">
+                <img src="./img/gif/rain.gif" class="icon-anim-rain" alt="">
+                <img src="./img/gif/rain.gif" class="icon-anim-rain" alt="">
+            </div>
+            <div class="t-rex my-anim-1">
+                <br>
+                <img src="./img/gif/lambeosaurus.gif" alt="t-rex" class="icon-anim">
+            </div>
+        </div>
     </div>
-    <div class="animation"></div>
-    <script src="./script.js"></script>
+    <!-- <script src="./script.js"></script> -->
 </body>
 </html>
