@@ -4,7 +4,6 @@
 }
 
 body {
-    background-color: #f2f2f2;
     margin: 0;
     padding: 20px;
 }
@@ -31,7 +30,7 @@ body {
 .my-subtext {
     font-size: 16px;
     color: #666;
-    margin-bottom: 20px;
+    margin: 20px 0 0 0;
 }
 
 .my-form {
@@ -56,7 +55,7 @@ body {
 }
 
 .my-button {
-    background-color: #4CAF50;
+    background-color: #4c8baf;
     color: white;
     border: none;
     border-radius: 5px;
@@ -71,6 +70,7 @@ body {
 }
 
 .animation {
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 3px;
     border: 2px solid lightgray;
@@ -81,17 +81,28 @@ body {
 .my-anim-1 {
     position: relative;
     width: 100%;
-    animation: moveAnimation 8s linear infinite; /* Animation de déplacement horizontal */
+    animation: moveAnimation 5s linear infinite;
 }
 
 @keyframes moveAnimation {
-    0% { left: -100%; } /* Départ à gauche de .t-rex */
-    100% { left: 100%; } /* Arrivée à droite de .t-rex */
+    0% { left: -100%; }
+    100% { left: 100%; }
 }
 
-.icon-anim {
+.icon-anim-1 {
     width: 12%;
-    height: 60%;
+    height: 60;
+}
+
+.icon-anim-2 {
+    width: 12%;
+    height: 60;
+    transform: scaleX(-1);
+}
+
+.my-anim-2 {
+    position: relative;
+    width: 100%;
 }
 
 .icon-anim-rain {

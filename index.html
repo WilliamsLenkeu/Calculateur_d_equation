@@ -6,7 +6,7 @@
     <title>Résolveur d'équations du second degré</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body class="my-body">
     <div class="container">
         <div class="calculatrice">
             <h1 class="my-text">Résolveur d'équations du second degré</h1>
@@ -18,13 +18,12 @@
                     <input type="number" placeholder="b" id="b" class="input-block-text" />
                     X +
                     <input type="number" placeholder="c" id="c" class="input-block-text" />
-                    =
-                    <input type="number" placeholder="0" id="d" class="input-block-text"/>
                 </div>
-                <button type="submit" class="my-button">Résoudre</button>
+                <button type="button" onclick="resolveEquation()" class="my-button">Résoudre</button>
             </form>
+            <div id="solution" class="my-subtext"></div> <!-- Affiche la solution -->
         </div>
-        <div class="animation" style="background-color: rgb(255, 255, 255);">
+        <div class="animation" id="animationContainer" hidden>
             <div class="rain" hidden>
                 <img src="./img/gif/rain.gif" class="icon-anim-rain" alt="">
                 <img src="./img/gif/rain.gif" class="icon-anim-rain" alt="">
@@ -35,12 +34,16 @@
                 <img src="./img/gif/rain.gif" class="icon-anim-rain" alt="">
                 <img src="./img/gif/rain.gif" class="icon-anim-rain" alt="">
             </div>
-            <div class="t-rex my-anim-1">
+            <div class="t-rex my-anim-1" hidden>
                 <br>
-                <img src="./img/gif/lambeosaurus.gif" alt="t-rex" class="icon-anim">
+                <img src="./img/gif/lambeosaurus.gif" alt="t-rex" class="icon-anim-1">
+            </div>
+            <div class="t-rex my-anim-2" id="pterodactylContainer" hidden>
+                <br>
+                <img src="./img/gif/pterodactyl.gif" alt="t-rex" class="icon-anim-2">
             </div>
         </div>
     </div>
-    <!-- <script src="./script.js"></script> -->
+    <script src="./script.js"></script>
 </body>
 </html>
