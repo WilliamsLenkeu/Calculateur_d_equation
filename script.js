@@ -1,3 +1,30 @@
+
+
+function changerCouleurFondEnFonctionHeure() {
+    // Obtenir l'heure actuelle
+    const date = new Date();
+    const heures = date.getHours();
+  
+    // Déterminer la couleur du fond en fonction de l'heure
+    const isJournee = heures >= 6 && heures < 18;
+    const couleurFond = isJournee ? "white" : "#414141";
+  
+    // Appliquer la couleur du fond au corps du document
+    document.body.style.backgroundColor = couleurFond;
+  }
+
+  window.onload = function() {
+    // appeler la fonction pour changer le background
+    changerCouleurFondEnFonctionHeure();
+
+  };
+
+
+
+
+
+
+
 // JavaScript pour résoudre l'équation et déclencher l'animation
 function resolveEquation() {
     // Récupère les valeurs des coefficients
@@ -87,11 +114,20 @@ function formatComplexNumber(real, imaginary) {
     }
 }
 
-// Fonction pour vérifier s'il fait jour en fonction de l'heure locale de la machine
+/* Fonction pour vérifier s'il fait jour en fonction de l'heure locale de la machine
 function checkDaytime() {
     var currentHour = new Date().getHours();
     return currentHour >= 6 && currentHour < 18;
-}
+}*/
+
+
+
+
+
+
+    
+
+
 
 // Fonction pour démarrer l'animation du pterodactyle
 function animatePterodactyl() {
